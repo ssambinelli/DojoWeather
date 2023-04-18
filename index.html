@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav>
+        <h1>DojoWeather</h1>
+        <ul>
+            <li onclick="alert('Loading weather report...')">Burbank</li>
+            <li onclick="alert('Loading weather report...')">Chicago</li>
+            <li onclick="alert('Loading weather report...')">Dallas</li>
+        </ul>
+    </nav>
+
+    <!-- Main Body  -->
+    <main>
+
+        <!-- Selected City Name  -->
+        <div id="selected-city">
+            <h1>San Jose</h1>
+            <p>show temperature in
+                <select name="temperature" id="temperature" onchange="degreeType(this.value)">
+                    <option value="celsius">&deg;C</option>
+                    <option value="fahrenheit">&deg;F</option>
+                </select>
+            </p>
+        </div>
+
+        <!-- Days Containers -->
+        <div id="main-days">
+            <div class="weather">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png" alt="some rain">
+                <ul>
+                    <li class="max-temp">24</li>
+                    <li class="min-temp">18</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h1>Tomorrow</h1>
+                <img src="assets/some_sun.png" alt="some sun">
+                <ul>
+                    <li class="max-temp">27</li>
+                    <li class="min-temp">19</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h1>Friday</h1>
+                <img src="assets/some_clouds.png" alt="some clouds">
+                <ul>
+                    <li class="max-temp">21</li>
+                    <li class="min-temp">16</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h1>Saturday</h1>
+                <img src="assets/some_sun.png" alt="some sun">
+                <ul>
+                    <li class="max-temp">26</li>
+                    <li class="min-temp">21</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cookies namnam -->
+        <div id="cookies">
+            <img src="assets/cookie.png" alt="cookie">
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="cookieRemove('#cookies')">I Accept</button>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <!-- Java Script link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
